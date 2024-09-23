@@ -1,0 +1,109 @@
+/*dark theme*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /*background*/
+  color: #f5f5f5;
+}
+
+/*center and pad the container */
+.app {
+  text-align: center;
+  padding: 40px;
+  background-color: #121212;
+}
+
+/*title*/
+h1 {
+  color: #ff9800;
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/*cards container*/
+.soccer-team-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*card styles*/
+.soccer-team-card {
+  background-color: #2e2e2e;
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: 1px solid #444;
+}
+
+.soccer-team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+/*logos*/
+.soccer-team-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+/*card-title*/
+.soccer-team-card h3 {
+  font-size: 22px;
+  margin: 15px 0;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/*schedule button*/
+.soccer-team-card button {
+  background-color: #ff9800;
+  color: #a31e1e;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.soccer-team-card button:hover {
+  background-color: #e68900;
+}
+
+/*media query for responsive design*/
+@media (max-width: 600px) {
+  .soccer-team-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .soccer-team-card {
+    padding: 20px;
+  }
+
+  .soccer-team-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .soccer-team-card h3 {
+    font-size: 18px;
+  }
+
+  .soccer-team-card button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
