@@ -4,6 +4,7 @@ This project is a React app built with Vite that displays a community board for 
 
 ## Preview
 
-![Soccer Teams Preview](./Show.gif)
+![Soccer Teams Preview](./public/Show.gif)
+
 
 
